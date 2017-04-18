@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Index from '../views/index/index.vue' /**首页*/
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
+    /**首页面*/
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'index',
+      component: Index
     }
+    /***/
   ]
 })
